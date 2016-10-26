@@ -77,7 +77,7 @@
         if (obj.removeEventListener) {
             obj.removeEventListener(type, fnName, false);
         } else {
-            obj.detachEvent(type, fnName);
+            obj.detachEvent("on"+type, fnName);
         }        
     }
 ```
