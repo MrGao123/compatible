@@ -42,7 +42,7 @@
         if (str.trim) {
             return sre.trim();
         }
-        var reg = /^\s | \s$/
+        var reg = /^\s+ | \s+$/
         return str.replace(reg,"");
     }  
 ```
