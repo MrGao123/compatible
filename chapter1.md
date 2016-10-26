@@ -5,7 +5,7 @@
 ```js
     //兼容实现
     function innerText() {
-        if () {
+        if (innerTxt) {
 
         }
     }
