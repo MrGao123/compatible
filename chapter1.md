@@ -17,7 +17,8 @@
 > 兼容情况：IE8及以下不兼容
 
 ```js
-    //兼容实现
+    //兼容实现：nodeType：1-元素节点 2-属性节点 3-文本节点 8-注释节点 9-document
+    
     function nextElementSinling(obj){
         if (obj.nextElementSibling) {
             return obj.nextElementSibling;
