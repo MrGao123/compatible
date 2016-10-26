@@ -43,8 +43,7 @@
             return sre.trim();
         }
         var reg = /^\s | \s$/
-    }    
-
-
+        return str.replace(reg,"");
+    }  
 ```
 
