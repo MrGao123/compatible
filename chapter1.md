@@ -4,9 +4,9 @@
 
 ```js
     //兼容实现
-    function innerText() {
-        if (innerTxt) {
-
+    function innerText(obj) {
+        if (obj.innerText) {
+            
         }
     }
 ```
