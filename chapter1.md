@@ -89,5 +89,6 @@
 
 ## 7.阻止事件冒泡
 * W3C：事件对象.stopPropogation();
+* IE: window.event.cancelBUbble = true;
 * IE: window.event.cancelBubble = true;
 
