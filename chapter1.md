@@ -53,8 +53,12 @@
 
 ```js
     //兼容实现
-    function addEventListener() {
-        
+    function addEventListener(obj,type,callback) {
+        if (obj.addEventListener) {
+            obj.addEventListener(type,callback);
+        } else {
+            obj.attachEvent("on"+type,callback.call(obj));
+        }            
     }
 ```
 
