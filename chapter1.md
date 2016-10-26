@@ -87,3 +87,7 @@
 * W3C标准：事件处理函数的第一个参数
 * IE：window.event
 
+## 7.阻止事件冒泡
+* W3C：事件对象.stopPropogation();
+* IE: window.event.cancelBubble = true;
+
