@@ -6,7 +6,7 @@
     //兼容实现
     function innerText(obj) {
         if (obj.innerText) {
-            
+               
         }
     }
 ```
