@@ -106,7 +106,9 @@ IE：dom.currentStyle
     //pseudoElt：伪元素，如果不是想获取元素对应的伪元素的样式，那就传null。
     //注意，是传null，而不是不传。
     
-    dom.currentStyle()
+    //和window.getComputedStyle不同，
+    //dom.currentStyle是一个对象，
+    //取相应的属性：dom.currentStyle('width');
 
 ```
 
