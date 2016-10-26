@@ -51,3 +51,10 @@
     * W3C标准：addEventListener
     * IE：attachEvent
 
+```js
+    //兼容实现
+    function addEventListener() {
+        
+    }
+```
+
