@@ -59,7 +59,7 @@
     //兼容实现
     function addEventListener(obj,type,callback) {
         if (obj.addEventListener) {
-            //第三个参数为是否是捕获型，默认为false，冒泡
+            //第三个参数为是否是捕获型事件，默认为false，冒泡型事件
             obj.addEventListener(type,callback,false);
         } else {
             obj.attachEvent("on"+type,callback.call(obj));
@@ -75,6 +75,7 @@
     //兼容实现
     function removeEventListener(obj, type, fnName){
         if (obj.removeEventListener) {
+            //如果同一个监听事件分别为“事件捕获”和“事件冒泡”注册了一次，一共两次，这两次事件需要分别移除。两者不会互相干扰。
             obj.removeEventListener(type, fnName, false);
         } else {
             obj.detachEvent("on"+type, fnName);
