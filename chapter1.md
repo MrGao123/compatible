@@ -109,7 +109,6 @@ IE：dom.currentStyle
     //和window.getComputedStyle不同，
     //dom.currentStyle是一个对象，
     //取相应的属性：dom.currentStyle('width');
-
 ```
 
 
