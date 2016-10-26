@@ -48,8 +48,10 @@
 ```
 
 ## 4.绑定事件操作：
-    * W3C标准：addEventListener
-    * IE：attachEvent
+* W3C标准：addEventListener
+* IE：attachEvent
+* 两者区别：前者事件类型不需要加"on"前缀，并且事件处理函数中的this指向触发对象；
+    后者事件类型需要加“on”前缀，并且事件处理函数内部的this指向window
 
 ```js
     //兼容实现
@@ -59,6 +61,21 @@
         } else {
             obj.attachEvent("on"+type,callback.call(obj));
         }            
+    }
+```
+
+## 5.事件解绑
+* W3C标准：removeEventListener
+* IE：detachEvent
+
+```js
+    //兼容实现
+    function removeEventListener(obj, type, fnName){
+        if (obj.removeEventListener) {
+            obj.removeEventListener(type, fnName);
+        } else {
+            obj.detachEvent(type, fnName);
+        }        
     }
 ```
 
