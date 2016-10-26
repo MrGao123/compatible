@@ -27,6 +27,7 @@
                 return elems;
             }
         }
+        return null;
     }
 ```
 
