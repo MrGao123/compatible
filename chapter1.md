@@ -22,7 +22,7 @@
             return obj.nextElementSibling;
         }
         var elems = obj.nextSiblings;
-        for (var i = 0; i < elems.lengthl; i++) {
+        for (var i = 0; i < elems.length; i++) {
             if (elems.nodeType !== 1) {
                 return elems;
             }
