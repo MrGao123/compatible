@@ -12,3 +12,9 @@
     }
 ```
 
+## 2.nextElementSibling
+
+> 兼容情况：IE8及以下不兼容
+
+
+
