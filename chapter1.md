@@ -105,6 +105,8 @@ IE：dom.currentStyle
     //返回的是存储css样式的对象
     //pseudoElt：伪元素，如果不是想获取元素对应的伪元素的样式，那就传null。
     //注意，是传null，而不是不传。
+    
+    dom.currentStyle()
 
 ```
 
