@@ -75,7 +75,7 @@
     //兼容实现
     function removeEventListener(obj, type, fnName){
         if (obj.removeEventListener) {
-            obj.removeEventListener(type, fnName);
+            obj.removeEventListener(type, fnName, false);
         } else {
             obj.detachEvent(type, fnName);
         }        
