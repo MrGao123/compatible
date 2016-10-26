@@ -38,8 +38,11 @@
 > 兼容情况：IE8以下不兼容
 
 ```js
-    function trim() {
-        
+    function trim(str) {
+        if (str.trim) {
+            return sre.trim();
+        }
+        var reg = /^\s | \s$/
     }    
 
 
