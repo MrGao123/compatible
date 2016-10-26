@@ -21,7 +21,10 @@
         if (obj.nextElementSibling) {
             return obj.nextElementSibling;
         }
-
+        var elems = obj.nextSiblings;
+        while(elems && elems.nodeType === 1) {
+            return elems;
+        }
     }
 ```
 
