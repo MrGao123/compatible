@@ -47,3 +47,7 @@
     }  
 ```
 
+## 4.绑定事件操作：
+    W3C标准：addEventListener
+    IE：attachEvent
+
