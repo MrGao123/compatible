@@ -95,6 +95,10 @@
 * W3C：事件对象.preventDefault();
 * IE: window.event.returnValue = false;
 
+## 9.获取非行内样式的样式
+W3C标准：window.getComputedStyle()
+IE：dom.currentStyle
+
 
 
 
