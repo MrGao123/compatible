@@ -17,6 +17,7 @@
 > 兼容情况：IE8及以下不兼容
 
 ```js
+    //兼容实现
     function nextElementSinling(obj){
         if (obj.nextElementSibling) {
             return obj.nextElementSibling;
