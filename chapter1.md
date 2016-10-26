@@ -59,7 +59,8 @@
     //兼容实现
     function addEventListener(obj,type,callback) {
         if (obj.addEventListener) {
-            obj.addEventListener(type,callback);
+            //第三个参数为是否是捕获型，默认为false，冒泡
+            obj.addEventListener(type,callback,false);
         } else {
             obj.attachEvent("on"+type,callback.call(obj));
         }            
